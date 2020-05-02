@@ -1,0 +1,37 @@
+.social {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social__item {
+    margin-right: 23px;
+  }
+
+  .social__icon {
+    &--facebook {
+      width: 9px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--twitter {
+      width: 16px;
+      height: 13px;
+    }
+  }
+}

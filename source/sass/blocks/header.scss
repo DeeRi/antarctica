@@ -1,0 +1,110 @@
+.header {
+  padding-top: 35px;
+  color: $light-text-color;
+  position: relative;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/promo@1x.png");
+    background-size: cover;
+  }
+}
+
+.header__toggle {
+  display: none;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    &::before {
+      height: 638px;
+      background-image: url("../img/promo-tablet@1x.png");
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    color: $main-text-color;
+    padding-top: 20px;
+    padding-bottom: 143px;
+
+    &::before {
+      background-image: url("../img/promo-mobile@1x.png");
+      height: 500px;
+    }
+  }
+
+  .header__wrapper {
+    flex-direction: column;
+
+    &--icons {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .header__navigation {
+    display: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header__toggle {
+    display: block;
+    background-color: transparent;
+    width: 24px;
+    height: 12px;
+    border: none;
+    background-image: url("../img/icon-menu.svg");
+    background-size: 24px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .header--nojs,
+  .header--opened {
+    padding-bottom: 0;
+    background-color: $background-main;
+  }
+
+  .header--nojs .header__wrapper--icons,
+  .header--opened .header__wrapper--icons {
+    padding-bottom: 50px;
+  }
+
+  .header--nojs .header__navigation,
+  .header--opened .header__navigation {
+    display: block;
+    padding-bottom: 65px;
+  }
+
+  .header--nojs .header__toggle {
+    display: none;
+  }
+
+  .header--opened .header__toggle {
+    height: 13px;
+    background-size: 13px 13px;
+    background-image: url("../img/icon-menu-closed.svg");
+  }
+
+  .header--nojs .header__logo-icon,
+  .header--opened .header__logo-icon {
+    fill: $dark-logo;
+  }
+}

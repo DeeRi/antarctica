@@ -1,9 +1,6 @@
 .intro {
   padding: 120px 0;
-}
-
-.intro br {
-  display: none;
+  background-color: $background-main;
 }
 
 .intro__wrapper {
@@ -11,12 +8,15 @@
   align-items: center;
 }
 
-.intro__title {
+.intro h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
   margin: 0;
   padding-bottom: 40px;
 }
 
-.intro__text {
+.intro p{
   width: 512px;
   margin-right: 88px;
 }
@@ -26,11 +26,13 @@
     padding: 100px 0;
   }
 
-  .intro br {
-    display: block;
+  .intro h2 {
+    font-size: 26px;
+    line-height: 36px;
+    padding-bottom: 30px;
   }
 
-  .intro__text {
+  .intro p {
     width: 324px;
   }
 }
@@ -44,13 +46,13 @@
     flex-direction: column;
   }
 
-  .intro__text {
+  .intro p {
     width: 100%;
     margin: 0;
     padding-bottom: 40px;
   }
 
-  .intro__img {
+  .intro img {
     width: 290px;
     height: auto;
   }

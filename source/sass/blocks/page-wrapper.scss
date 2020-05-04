@@ -1,0 +1,19 @@
+.page-wrapper {
+  background-color: $background-contrast;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/promo@1x.png");
+}
+
+@media (max-width: $tablet-width) {
+  .page-wrapper {
+    background-image: url("../img/promo-tablet@1x.png");
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-wrapper {
+    background-image: url("../img/promo-mobile@1x.png");
+  }
+}

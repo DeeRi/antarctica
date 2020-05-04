@@ -7,8 +7,8 @@
 }
 
 .intro__wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .intro__title {
@@ -35,7 +35,6 @@
   }
 }
 
-
 @media (max-width: $mobile-width) {
   .intro {
     padding: 65px 0;
@@ -56,4 +55,3 @@
     height: auto;
   }
 }
-

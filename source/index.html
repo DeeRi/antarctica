@@ -80,39 +80,126 @@
                 другое.
               </p>
             </div>
-            <picture>
-              <source
-                srcset="img/birds-mobile@1x.png"
-                media="(max-width: 767px)"
-              />
-
-              <source
-                srcset="img/birds-tablet@1x.png"
-                media="(max-width: 1023px)"
-              />
+            <div class="intro__image intro__image--desktop">
               <img
                 src="img/birds@1x.png"
                 alt="Пингвины"
                 width="560"
                 height="301"
               />
-            </picture>
+            </div>
+            <div class="intro__image intro__image--tablet">
+              <img
+                src="img/birds-tablet@1x.png"
+                alt="Пингвины"
+                width="324"
+                height="264"
+              />
+            </div>
+            <div class="intro__image intro__image--mobile">
+              <img
+                src="img/birds-mobile@1x.png"
+                alt="Пингвины"
+                width="290"
+                height="186"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section class="features">
         <div class="container">
+          <h2>Преимущества</h2>
           <ul class="features__list">
             <li class="features__item">
+              <svg class="features__icon" width="32" height="27">
+                <use xlink:href="#icon-ship-front"></use>
+              </svg>
               <h3>Небольшой круизный лайнер</h3>
               <p>
-              Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет
-              избежать шума и очередей и даст возможность насладиться видами и
-              природой.
+                Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет
+                избежать шума и очередей и даст возможность насладиться видами и
+                природой.
+              </p>
+            </li>
+            <li class="features__item">
+              <svg class="features__icon" width="38" height="21">
+                <use xlink:href="#icon-tick"></use>
+              </svg>
+              <h3>Система все включено</h3>
+              <p>
+                Все наши круизы работают по системе “Все Включено”. Великолепные
+                блюда и безлимитный бар доступны для вас 24 часа.
+              </p>
+            </li>
+            <li class="features__item">
+              <svg class="features__icon" width="42" height="15">
+                <use xlink:href="#icon-ship"></use>
+              </svg>
+              <h3>Экскурсионные туры на Zodiac</h3>
+              <p>
+                Экскурсионные туры к берегам Антарктиды совершаются на
+                оборудованных лодках типа Zodiac в сопровождении опытных
+                экскурсоводов.
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="booking">
+        <div class="container">
+          <div class="booking__wrapper">
+            <div class="booking__text">
+              <h2>Раннее бронирование</h2>
+              <p>
+                Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до
+                50%
+              </p>
+            </div>
+            <form action="" method="POST">
+              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <label for="name">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Валерия"
+                />
+              </label>
+
+              <label for="phone">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="89236889975"
+                />
+              </label>
+
+              <label for="email">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="grishaewa.lera@gmail.com"
+                />
+              </label>
+              <label for="agreement">
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  name="agreement"
+                  id="agreement"
+                  checked
+                />
+
+                Я согласен на обработку моих персональных данных</label
+              >
+              <button type="submit">Отправить заявку</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

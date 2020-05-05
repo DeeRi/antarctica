@@ -1,5 +1,81 @@
 .features {
+  padding: 120px 0;
+  text-align: center;
   background-image: url("../img/features@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+.features h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  padding-bottom: 60px;
+}
+
+.features h3 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features__item {
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 30%;
+  min-height: 241px;
+  background-color: $background-card;
+  text-align: left;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.features__icon {
+  margin-bottom: 23px;
+}
+
+@media (max-width: $tablet-width) {
+  .features {
+    background-image: url("../img/features-tablet@1x.png");
+  }
+
+  .features__item {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .features {
+    background-image: url("../img/features-mobile@1x.png");
+  }
+
+  .features__list {
+    flex-direction: column;
+  }
+
+  .features__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }

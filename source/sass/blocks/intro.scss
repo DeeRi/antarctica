@@ -53,6 +53,7 @@
     &--tablet {
       display: block;
     }
+
     &--mobile,
     &--desktop {
       display: none;
@@ -89,6 +90,7 @@
     &--mobile {
       display: block;
     }
+
     &--tablet,
     &--desktop {
       display: none;

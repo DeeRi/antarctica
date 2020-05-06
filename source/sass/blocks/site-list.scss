@@ -15,6 +15,14 @@
 .site-list__link {
   color: $light-text-color;
   font-weight: 500;
+
+  &:hover {
+    color: $light-link-hover;
+  }
+
+  &:active {
+    color: $light-link-active;
+  }
 }
 
 @media (max-width: $tablet-width) {

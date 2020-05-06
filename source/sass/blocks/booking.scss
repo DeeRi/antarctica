@@ -12,7 +12,7 @@
 }
 
 .booking__text {
-  width: 500px;
+  width: 44.1%;
 }
 
 .booking h2 {
@@ -68,12 +68,12 @@
   margin-top: 35px;
 
   &:hover {
-    color: rgba(1, 28, 64, 0.8);
+    color: $link-hover;
   }
 
   &:active,
   &:focus {
-    color: rgba(1, 28, 64, 0.6);
+    color: $link-active;
   }
 }
 

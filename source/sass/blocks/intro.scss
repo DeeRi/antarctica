@@ -10,7 +10,7 @@
 }
 
 .intro__text {
-  width: 512px;
+  width: 44.1%;
 }
 
 .intro h2 {
@@ -28,9 +28,15 @@
 }
 
 .intro__image {
+  &--desktop {
+    width: 48.2%;
+  }
   &--mobile,
   &--tablet {
     display: none;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -46,12 +52,13 @@
   }
 
   .intro__text {
-    width: 324px;
+    width: 47.78%;
   }
 
   .intro__image {
     &--tablet {
       display: block;
+      width: 47.78%;
     }
 
     &--mobile,
@@ -89,6 +96,7 @@
   .intro__image {
     &--mobile {
       display: block;
+      width: 100%;
     }
 
     &--tablet,

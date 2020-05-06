@@ -96,12 +96,12 @@
   text-align: center;
 
   &:hover {
-    color: rgba(1, 28, 64, 0.8);
+    color: $link-hover;
   }
 
   &:active,
   &:focus {
-    color: rgba(1, 28, 64, 0.6);
+    color: $link-active;
   }
 }
 

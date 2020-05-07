@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/features@2x.png");
+  }
 }
 
 .features h2 {
@@ -56,6 +60,10 @@
 @media (max-width: $tablet-width) {
   .features {
     background-image: url("../img/features-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/features-tablet@2x.png");
+    }
   }
 
   .features__item {
@@ -68,6 +76,10 @@
 @media (max-width: $mobile-width) {
   .features {
     background-image: url("../img/features-mobile@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/features-mobile@2x.png");
+    }
   }
 
   .features__list {

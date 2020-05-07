@@ -4,16 +4,28 @@
   background-size: cover;
   background-position: center;
   background-image: url("../img/promo@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/promo@2x.png");
+  }
 }
 
 @media (max-width: $tablet-width) {
   .page-wrapper {
     background-image: url("../img/promo-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/promo-tablet@2x.png");
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .page-wrapper {
     background-image: url("../img/promo-mobile@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/promo-mobile@2x.png");
+    }
   }
 }

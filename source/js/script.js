@@ -5,9 +5,11 @@ var headerToggle = document.querySelector('.header__toggle');
 pageHeader.classList.remove('header--nojs');
 
 headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('header--opened')) {
-    pageHeader.classList.remove('header--opened');
-  } else {
+  if (pageHeader.classList.contains('header--closed')) {
     pageHeader.classList.add('header--opened');
+    pageHeader.classList.remove('header--closed');
+  } else {
+    pageHeader.classList.add('header--closed');
+    pageHeader.classList.remove('header--opened');
   }
 });

@@ -5,8 +5,13 @@
   align-items: center;
 }
 
+.social__link {
+  word-break: break-all;
+}
+
 .social__item {
   margin-right: 33px;
+  max-width: 30px;
 
   &:last-child {
     margin-right: 0;

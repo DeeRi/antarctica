@@ -5,6 +5,18 @@
   align-items: center;
 }
 
+.social__icon {
+  fill: $background-main;
+
+  &:hover {
+    fill: $light-link-hover;
+  }
+
+  &:active {
+    fill: $light-link-active;
+  }
+}
+
 .social__link {
   word-break: break-all;
 }

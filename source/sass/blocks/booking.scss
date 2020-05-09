@@ -52,6 +52,9 @@
   padding: 16px;
   margin-bottom: 20px;
   background-color: $background-main;
+  color: $main-text-color;
+  font-weight: 400;
+  font-size: 14px;
 
   &[type="checkbox"] {
     width: 18px;

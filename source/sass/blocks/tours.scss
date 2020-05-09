@@ -7,14 +7,15 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 15px;
 }
 
 .tours__item {
   position: relative;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   margin-bottom: 30px;
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
 }
 
 .tours h2 {

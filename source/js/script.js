@@ -13,3 +13,4 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('header--opened');
   }
 });
+

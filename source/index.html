@@ -567,47 +567,50 @@
                 50%
               </p>
             </div>
-            <form action="url" method="POST">
-              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-              <label for="name">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Валерия"
-                />
-              </label>
+            <form action="url" method="POST" id="form">
+                <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                <label for="name">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Валерия"
+                  />
+                </label>
 
-              <label for="phone">
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  placeholder="89236889975"
-                />
-              </label>
+                <label for="phone">
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="89236889975"
+                  />
+                </label>
 
-              <label for="email">
+                <label for="email">
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    required
+                    pattern="^\S+@\S+\.\S+$"
+                    placeholder="grishaewa.lera@gmail.com"
+                  />
+                </label>
                 <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="grishaewa.lera@gmail.com"
-                  required
+                  class="visually-hidden"
+                  type="checkbox"
+                  value="1"
+                  name="agreement"
+                  id="agreement"
+                  checked
                 />
-              </label>
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                value="1"
-                name="agreement"
-                id="agreement"
-                checked
-              />
-              <label for="agreement">
-                Я согласен на обработку моих персональных данных</label
-              >
-              <button id="buttonSubmit" type="submit">Отправить заявку</button>
+                <label for="agreement">
+                  Я согласен на обработку моих персональных данных</label
+                >
+                <button id="buttonSubmit" type="submit">
+                  Отправить заявку
+                </button>
             </form>
           </div>
         </div>

@@ -46,6 +46,7 @@
 }
 
 .booking input {
+  outline: none;
   border: none;
   width: 303px;
   height: 43px;
@@ -55,6 +56,11 @@
   color: $main-text-color;
   font-weight: 400;
   font-size: 14px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
 
   &[type="checkbox"] {
     width: 18px;
@@ -100,6 +106,7 @@
 
   &[for="agreement"] {
     position: relative;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -126,6 +133,15 @@
     }
   }
 }
+
+input[type="checkbox"] + label[for="agreement"]::after {
+  content: none;
+}
+
+input[type="checkbox"]:checked + label[for="agreement"]::after {
+  content: "";
+}
+
 
 @media (max-width: $tablet-width) {
   .booking {

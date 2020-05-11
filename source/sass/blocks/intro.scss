@@ -1,5 +1,6 @@
 .intro {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .intro__wrapper {
@@ -43,7 +44,8 @@
 
 @media (max-width: $tablet-width) {
   .intro {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .intro h2 {
@@ -71,7 +73,8 @@
 
 @media (max-width: $mobile-width) {
   .intro {
-    padding: 65px 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 
   .intro__wrapper {

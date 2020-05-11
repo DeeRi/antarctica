@@ -1,6 +1,7 @@
 .tours {
   text-align: center;
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .tours__list {
@@ -108,6 +109,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .tours {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .tours__image {
     &--desktop,
     &--mobile {
@@ -121,6 +127,11 @@
 }
 
 @media (max-width: $mobile-width) {
+  .tours {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
   .tours__image {
     &--desktop,
     &--tablet {

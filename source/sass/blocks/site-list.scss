@@ -58,6 +58,15 @@
     line-height: 22px;
     color: $main-text-color;
 
+    &:hover {
+      color: $link-hover;
+    }
+
+    &:active,
+    &:focus {
+      color: $link-active;
+    }
+
     &--footer {
       font-size: 12px;
       line-height: 15px;

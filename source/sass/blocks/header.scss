@@ -1,7 +1,6 @@
 .header {
   padding-top: 35px;
   color: $light-text-color;
-  position: relative;
 }
 
 .header__toggle {
@@ -16,8 +15,20 @@
 }
 
 @media (max-width: $mobile-width) {
+  .header {
+    padding: 0;
+  }
+
   .header__navigation {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 65px;
+    position: absolute;
+    top: 0;
+    left:0;
+    min-width: 280px;
+    padding-top: 20px;
   }
 
   .header__icons {
@@ -54,10 +65,7 @@
       padding-right: 15px;
       background-color: $background-main;
       position: absolute;
-      top: 20px;
-      left: 0;
       z-index: 10;
-      padding-top: 20px;
     }
 
     .header__toggle {

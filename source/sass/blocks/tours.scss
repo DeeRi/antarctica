@@ -8,15 +8,26 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 15px;
 }
 
 .tours__item {
+  width: 23%;
+  margin-right: 3.5%;
   position: relative;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   margin-bottom: 30px;
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  margin-right: 2%;
+
+  img {
+    height: 100%;
+  }
+
+  &:nth-child(4n),
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .tours h2 {
@@ -49,8 +60,10 @@
 }
 
 .tours__text {
-  padding-left: 25px;
-  padding-top: 35px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: $tour-text-color;
   width: 100%;
   height: 100%;
@@ -90,7 +103,7 @@
   display: block;
   padding-top: 14px;
   padding-bottom: 15px;
-  width: 210px;
+  width: 100%;
   background-color: $background-main;
   color: $main-text-color;
   font-weight: 600;
@@ -114,6 +127,24 @@
     padding-bottom: 100px;
   }
 
+  .tours__item {
+    width: 47%;
+    margin-right: 6%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .tours__text {
+    padding: 35px;
+  }
+
   .tours__image {
     &--desktop,
     &--mobile {
@@ -121,6 +152,7 @@
     }
 
     &--tablet {
+      height: 100%;
       display: block;
     }
   }
@@ -132,6 +164,23 @@
     padding-bottom: 65px;
   }
 
+  .tours__item {
+    min-width: 100%;
+    margin-right: 0;
+
+    img {
+      height: auto;
+    }
+  }
+
+  .tours__text {
+    padding: 25px;
+  }
+
+  .tours__list {
+    justify-content: center;
+  }
+
   .tours__image {
     &--desktop,
     &--tablet {
@@ -139,6 +188,7 @@
     }
 
     &--mobile {
+      height: 100%;
       display: block;
     }
   }

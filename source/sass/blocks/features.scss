@@ -36,11 +36,11 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .features__item {
   margin-bottom: 40px;
+  margin-right: 3.448%;
   padding-left: 30px;
   padding-right: 20px;
   padding-top: 30px;
@@ -50,7 +50,8 @@
   background-color: $background-card;
   text-align: left;
 
-  &:last-child {
+  &:last-child,
+  &:nth-child(3n) {
     margin-right: 0;
   }
 }

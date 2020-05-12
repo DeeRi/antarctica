@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 150px;
 }
 
 .social__icon {
@@ -31,6 +32,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .social {
+    max-width: 110px;
+  }
+
   .social__item {
     margin-right: 23px;
   }

@@ -1,6 +1,7 @@
 .header {
   padding-top: 35px;
   color: $light-text-color;
+  flex-shrink: 0;
 }
 
 .header__toggle {
@@ -46,6 +47,7 @@
       background-image: url("../img/icon-menu.svg");
       background-size: 24px 12px;
       background-repeat: no-repeat;
+      background-position: center;
       border: none;
       width: 24px;
       height: 12px;

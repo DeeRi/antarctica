@@ -45,6 +45,12 @@
   text-align: left;
 }
 
+.booking__capture {
+  display: block;
+  padding-bottom: 35px;
+  max-width: 303px;
+}
+
 .booking input {
   outline: none;
   border: none;
@@ -204,6 +210,10 @@ input[type="checkbox"]:not(:checked) + label[for="agreement"]::before {
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/form-mobile@2x.png");
     }
+  }
+
+  .booking__capture {
+    width: 80%;
   }
 
   .booking form {

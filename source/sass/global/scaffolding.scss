@@ -6,10 +6,15 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+}
+
+html {
+  display: flex;
 }
 
 body {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: $main-font;
@@ -18,8 +23,11 @@ body {
   font-style: normal;
   line-height: 20px;
   color: $main-text-color;
-  width: 100%;
   min-width: 280px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {

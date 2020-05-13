@@ -562,34 +562,35 @@
             </div>
             <form action="url" method="POST">
                 <span class="booking__capture">Оставьте заявку и мы свяжемся с вами в ближайшее время</span>
-                <label for="name">
+                <label>
+                  <span class="visually-hidden">Введите ваше имя</span>
                   <input
                     type="text"
                     name="name"
-                    id="name"
                     placeholder="Валерия"
                   />
                 </label>
 
-                <label for="phone">
+                <label>
+                  <span class="visually-hidden">Введите ваш телефон</span>
                   <input
                     type="text"
                     name="phone"
-                    id="phone"
                     placeholder="89236889975"
                   />
                 </label>
 
-                <label for="email">
+                <label>
+                  <span class="visually-hidden">Введите ваш email</span>
                   <input
                     type="text"
                     name="email"
-                    id="email"
                     required
                     pattern="^\S+@\S+\.\S+$"
                     placeholder="grishaewa.lera@gmail.com"
                   />
                 </label>
+
                 <input
                   class="visually-hidden"
                   type="checkbox"

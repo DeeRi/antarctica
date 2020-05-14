@@ -14,3 +14,14 @@ headerToggle.addEventListener('click', function () {
   }
 });
 
+var agreement = document.getElementById('agreement');
+
+function checkForm(checkbox) {
+  if (!checkbox.checked) {
+    checkbox.focus();
+    return false;
+  }
+  return true;
+}
+
+checkForm(agreement);

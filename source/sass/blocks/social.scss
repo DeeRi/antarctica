@@ -19,7 +19,12 @@
 }
 
 .social__link {
+  outline: none;
   word-break: break-all;
+
+  &:focus .social__icon {
+    fill: $light-link-active;
+  }
 }
 
 .social__item {

@@ -15,6 +15,7 @@
 }
 
 .site-list__link {
+  outline: none;
   color: $light-text-color;
   font-size: 16px;
   font-weight: 500;
@@ -24,7 +25,8 @@
     color: $light-link-hover;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: $light-link-active;
   }
 }

@@ -27,7 +27,7 @@
     padding-bottom: 65px;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     min-width: 280px;
     padding-top: 20px;
   }
@@ -42,6 +42,7 @@
 
   .header--closed {
     .header__toggle {
+      outline: none;
       display: block;
       background-color: transparent;
       background-image: url("../img/icon-menu.svg");
@@ -71,6 +72,7 @@
     }
 
     .header__toggle {
+      outline: none;
       display: block;
       background-color: transparent;
       background-image: url("../img/icon-menu-closed.svg");
@@ -87,11 +89,18 @@
   }
 
   .header--nojs {
-    background-color: $background-main;
+    .header__navigation {
+      background-color: $background-main;
+      position: static;
+    }
 
     .header__list {
       color: $main-text-color;
       display: block;
+    }
+
+    .header__toggle {
+      display: none;
     }
 
     .header__logo-icon {

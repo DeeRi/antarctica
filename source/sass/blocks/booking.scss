@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
+  padding-bottom: 43px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/form@2x.png");
@@ -13,7 +14,7 @@
 .booking__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .booking__text {
@@ -49,6 +50,7 @@
   display: block;
   padding-bottom: 35px;
   max-width: 303px;
+  font-size: 18px;
 }
 
 .booking input {

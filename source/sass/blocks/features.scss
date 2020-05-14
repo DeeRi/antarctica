@@ -63,6 +63,8 @@
 
 @media (max-width: $tablet-width) {
   .features {
+    padding-top: 90px;
+    padding-bottom: 60px;
     background-image: url("../img/features-tablet@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -70,15 +72,31 @@
     }
   }
 
+  .features h2 {
+    font-size: 26px;
+  }
+
   .features__item {
     padding-left: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     padding-right: 16px;
+    padding-top: 38px;
+  }
+
+  .features h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .features__icon {
+    margin: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
   .features {
+    padding-top: 55px;
+    padding-bottom: 30px;
     background-image: url("../img/features-mobile@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -86,12 +104,19 @@
     }
   }
 
+  .features h2 {
+    font-size: 24px;
+    padding-bottom: 27px;
+  }
+
   .features__list {
     flex-direction: column;
   }
 
   .features__item {
+    padding-bottom: 10px;
+    padding-right: 16px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 }

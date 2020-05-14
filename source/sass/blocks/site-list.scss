@@ -61,6 +61,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--footer {
+      margin-bottom: 13px;
+    }
   }
 
   .site-list__link {
@@ -81,7 +85,6 @@
       font-size: 12px;
       line-height: 15px;
       color: $light-text-color;
-      margin-bottom: 23px;
     }
   }
 }

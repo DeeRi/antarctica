@@ -64,6 +64,14 @@
 
   .contacts__info {
     width: 47.7%;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  .contacts address,
+  .contacts__phone {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .contacts__map {
@@ -80,7 +88,7 @@
 
 @media (max-width: $mobile-width) {
   .contacts {
-    padding-top: 65px;
+    padding-top: 48px;
     padding-bottom: 65px;
   }
 
@@ -90,7 +98,7 @@
 
   .contacts__info {
     width: 100%;
-    margin-bottom: 43px;
+    margin-bottom: 23px;
   }
 
   .contacts__map {

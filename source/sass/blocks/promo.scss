@@ -26,10 +26,18 @@
 }
 
 @media (max-width: $tablet-width) {
+  .promo {
+    padding-top: 215px;
+  }
+
+  .promo__text {
+    padding: 0;
+  }
+
   .promo h1 {
     font-size: 50px;
     line-height: 61px;
-    padding-bottom: 29px;
+    padding-bottom: 11px;
   }
 
   .promo p {
@@ -40,8 +48,12 @@
 
 @media (max-width: $mobile-width) {
   .promo {
-    padding-top: 185px;
-    padding-bottom: 185px;
+    padding-top: 175px;
+    padding-bottom: 180px;
+
+    span {
+      display: block;
+    }
   }
 
   .promo__text {
@@ -57,5 +69,6 @@
   .promo p {
     font-size: 16px;
     line-height: 22px;
+    padding-right: 90px;
   }
 }

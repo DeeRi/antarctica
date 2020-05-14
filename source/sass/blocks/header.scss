@@ -15,6 +15,13 @@
   align-items: center;
 }
 
+
+@media (max-width: $tablet-width) {
+  .header {
+    padding-top: 27px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .header {
     padding: 0;

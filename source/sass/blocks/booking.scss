@@ -170,30 +170,39 @@ input[type="checkbox"]:not(:checked) + label[for="agreement"]::before {
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/form-tablet@2x.png");
     }
+    padding-top: 85px;
   }
 
   .booking__wrapper {
     flex-direction: column;
   }
 
+  .booking__capture {
+    padding-bottom: 27px;
+  }
+
   .booking__text {
-    width: 60%;
+    width: 67%;
   }
 
   .booking h2 {
-    padding-bottom: 25px;
+    padding-bottom: 8px;
     font-size: 34px;
     line-height: 51px;
   }
 
   .booking form {
-    margin-top: 60px;
+    margin-top: 50px;
+    padding-top: 45px;
     width: 403px;
+    line-height: 27px;
   }
 
   .booking p {
     font-size: 18px;
     line-height: 27px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 
   .booking input {
@@ -203,12 +212,16 @@ input[type="checkbox"]:not(:checked) + label[for="agreement"]::before {
 
   .booking button {
     width: 302px;
+    margin-top: 35px;
+    padding-top: 12px;
+    padding-bottom: 10px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .booking {
-    padding: 65px 0;
+    padding-top: 60px;
+    padding-bottom: 65px;
     background-image: url("../img/form-mobile@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -216,17 +229,32 @@ input[type="checkbox"]:not(:checked) + label[for="agreement"]::before {
     }
   }
 
+  .booking__text {
+    width: 100%;
+  }
+
   .booking__capture {
-    width: 80%;
+    width: 85%;
+    padding-bottom: 22px;
+  }
+
+  .booking p {
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .booking form {
     width: 100%;
     padding: 40px 30px;
     text-align: center;
+    margin-top: 30px;
+    padding-top: 36px;
   }
 
   .booking h2 {
+    padding-bottom: 15px;
     font-size: 24px;
     line-height: 31px;
   }
@@ -257,5 +285,6 @@ input[type="checkbox"]:not(:checked) + label[for="agreement"]::before {
 
   .booking button {
     width: 230px;
+    margin-top: 25px;
   }
 }

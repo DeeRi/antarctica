@@ -125,8 +125,17 @@
 
 @media (max-width: $tablet-width) {
   .tours {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 75px;
+  }
+
+  .tours h2 {
+    font-size: 26px;
+  }
+
+  .tours h3 {
+    left: 38px;
+    bottom: 24px;
   }
 
   .tours__item {
@@ -162,8 +171,18 @@
 
 @media (max-width: $mobile-width) {
   .tours {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 55px;
+    padding-bottom: 38px;
+  }
+
+  .tours h2 {
+    font-size: 24px;
+    padding-bottom: 25px;
+  }
+
+  .tours h3 {
+    left: 20px;
+    bottom: 20px;
   }
 
   .tours__list {
@@ -174,6 +193,7 @@
   .tours__item {
     width: 270px;
     margin-right: 0;
+    margin-bottom: 25px;
 
     img {
       height: auto;

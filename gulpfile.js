@@ -12,7 +12,8 @@ var rename = require("gulp-rename");
 var uglify = require("gulp-uglify");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore")
+var svgstore = require("gulp-svgstore");
+var htmlmin = require("gulp-htmlmin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -85,6 +86,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 

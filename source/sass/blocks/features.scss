@@ -23,7 +23,7 @@
 
 .features h3 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
@@ -40,11 +40,12 @@
 }
 
 .features__item {
+  position: relative;
   margin-bottom: 40px;
   margin-right: 3.448%;
   padding-left: 30px;
   padding-right: 27px;
-  padding-top: 37px;
+  padding-top: 77px;
   padding-bottom: 15px;
   width: 31%;
   min-height: 241px;
@@ -55,11 +56,28 @@
   &:nth-child(3n) {
     margin-right: 0;
   }
+
+  .features__icon {
+    position: absolute;
+  }
+
+  &--one .features__icon {
+    top: 30px;
+    left: 22px;
+  }
+
+  &--two .features__icon {
+    top: 32px;
+    left: 35px;
+  }
+
+  &--tree .features__icon {
+    top: 37px;
+    left: 33px;
+  }
 }
 
-.features__icon {
-  margin-bottom: 23px;
-}
+
 
 @media (max-width: $tablet-width) {
   .features {

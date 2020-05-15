@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Круизы в Антарктику</title>
-    <link rel="preload" as="style" href="css/style.min.css">
+    <link rel="preload" as="style" href="css/style.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -72,33 +72,57 @@
           </div>
           <div class="intro__image intro__image--desktop">
             <!-- 1х: 560px; 2x: 1120px -->
-            <img
-              src="img/birds@1x.png"
-              srcset="img/birds@1x.png 1x, img/birds@2x.png 2x"
-              alt="Пингвины"
-              width="560"
-              height="301"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/birds@1x.webp 1x, img/birds@2x.webp 2x"
+              />
+              <img
+                src="img/birds@1x.png"
+                srcset="img/birds@1x.png 1x, img/birds@2x.png 2x"
+                alt="Пингвины"
+                width="560"
+                height="301"
+              />
+            </picture>
           </div>
           <div class="intro__image intro__image--tablet">
             <!-- 1х: 324px; 2x: 648px -->
-            <img
-              src="img/birds-tablet@1x.png"
-              srcset="img/birds-tablet@1x.png 1x, img/birds-tablet@2x.png 2x"
-              alt="Пингвины"
-              width="324"
-              height="264"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  img/birds-tablet@1x.webp 1x,
+                  img/birds-tablet@2x.webp 2x
+                "
+              />
+              <img
+                src="img/birds-tablet@1x.png"
+                srcset="img/birds-tablet@1x.png 1x, img/birds-tablet@2x.png 2x"
+                alt="Пингвины"
+                width="324"
+                height="264"
+              />
+            </picture>
           </div>
           <div class="intro__image intro__image--mobile">
             <!-- 1х: 290px; 2x: 580px -->
-            <img
-              src="img/birds-mobile@1x.png"
-              srcset="img/birds-mobile@1x.png 1x, img/birds-mobile@2x.png 2x"
-              alt="Пингвины"
-              width="290"
-              height="186"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  img/birds-mobile@1x.webp 1x,
+                  img/birds-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="img/birds-mobile@1x.png"
+                srcset="img/birds-mobile@1x.png 1x, img/birds-mobile@2x.png 2x"
+                alt="Пингвины"
+                width="290"
+                height="186"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -107,7 +131,7 @@
         <div class="container">
           <h2>Преимущества</h2>
           <ul class="features__list">
-            <li class="features__item">
+            <li class="features__item features__item--one">
               <svg class="features__icon" width="32" height="27">
                 <use xlink:href="#icon-ship-front"></use>
               </svg>
@@ -118,7 +142,7 @@
                 природой.
               </p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--two">
               <svg class="features__icon" width="38" height="21">
                 <use xlink:href="#icon-tick"></use>
               </svg>
@@ -128,7 +152,7 @@
                 блюда и безлимитный бар доступны для вас 24 часа.
               </p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--tree">
               <svg class="features__icon" width="42" height="15">
                 <use xlink:href="#icon-ship"></use>
               </svg>
@@ -149,33 +173,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card1@1x.png"
-                srcset="img/card1@1x.png 1x, img/card1@2x.png 2x"
-                alt="Круиз Астория"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card1@1x.webp 1x, img/card1@2x.webp 2x"
+                />
+                <img
+                  src="img/card1@1x.png"
+                  srcset="img/card1@1x.png 1x, img/card1@2x.png 2x"
+                  alt="Круиз Астория"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card1-tablet@1x.png"
-                srcset="img/card1-tablet@1x.png 1x, img/card1-tablet@2x.png 2x"
-                alt="Круиз Астория"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card1-tablet@1x.webp 1x,
+                    img/card1-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card1-tablet@1x.png"
+                  srcset="
+                    img/card1-tablet@1x.png 1x,
+                    img/card1-tablet@2x.png 2x
+                  "
+                  alt="Круиз Астория"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card1-mobile@1x.png"
-                srcset="img/card1-mobile@1x.png 1x, img/card1-mobile@2x.png 2x"
-                alt="Круиз Астория"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card1-mobile@1x.webp 1x,
+                    img/card1-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card1-mobile@1x.png"
+                  srcset="
+                    img/card1-mobile@1x.png 1x,
+                    img/card1-mobile@2x.png 2x
+                  "
+                  alt="Круиз Астория"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Астория"</h3>
             <div class="tours__text">
@@ -194,33 +248,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card1@1x.png"
-                srcset="img/card1@1x.png 1x, img/card1@2x.png 2x"
-                alt="Круиз Астория"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card1@1x.webp 1x, img/card1@2x.webp 2x"
+                />
+                <img
+                  src="img/card1@1x.png"
+                  srcset="img/card1@1x.png 1x, img/card1@2x.png 2x"
+                  alt="Круиз Астория"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card1-tablet@1x.png"
-                srcset="img/card1-tablet@1x.png 1x, img/card1-tablet@2x.png 2x"
-                alt="Круиз Астория"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card1-tablet@1x.webp 1x,
+                    img/card1-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card1-tablet@1x.png"
+                  srcset="
+                    img/card1-tablet@1x.png 1x,
+                    img/card1-tablet@2x.png 2x
+                  "
+                  alt="Круиз Астория"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card1-tablet@1x.png"
-                srcset="img/card1-mobile@1x.png 1x, img/card1-mobile@2x.png 2x"
-                alt="Круиз Астория"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card1-mobile@1x.webp 1x,
+                    img/card1-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card1-mobile@1x.png"
+                  srcset="
+                    img/card1-mobile@1x.png 1x,
+                    img/card1-mobile@2x.png 2x
+                  "
+                  alt="Круиз Астория"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Астория"</h3>
             <div class="tours__text">
@@ -239,33 +323,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card4@1x.png"
-                srcset="img/card4@1x.png 1x, img/card4@2x.png 2x"
-                alt="Круиз Элайн"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card4@1x.webp 1x, img/card4@2x.webp 2x"
+                />
+                <img
+                  src="img/card4@1x.png"
+                  srcset="img/card4@1x.png 1x, img/card4@2x.png 2x"
+                  alt="Круиз Элайн"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card1-tablet@1x.png"
-                srcset="img/card4-tablet@1x.png 1x, img/card4-tablet@2x.png 2x"
-                alt="Круиз Элайн"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card4-tablet@1x.webp 1x,
+                    img/card4-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card1-tablet@1x.png"
+                  srcset="
+                    img/card4-tablet@1x.png 1x,
+                    img/card4-tablet@2x.png 2x
+                  "
+                  alt="Круиз Элайн"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card1-mobile@1x.png"
-                srcset="img/card4-mobile@1x.png 1x, img/card4-mobile@2x.png 2x"
-                alt="Круиз Элайн"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card4-mobile@1x.webp 1x,
+                    img/card4-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card1-mobile@1x.png"
+                  srcset="
+                    img/card4-mobile@1x.png 1x,
+                    img/card4-mobile@2x.png 2x
+                  "
+                  alt="Круиз Элайн"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Элайн"</h3>
             <div class="tours__text">
@@ -281,37 +395,66 @@
               <a class="tours__button" href="#">Забронировать</a>
             </div>
           </li>
-
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card3@1x.png"
-                srcset="img/card3@1x.png 1x, img/card3@2x.png 2x"
-                alt="Круиз Атлантис"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card3@1x.webp 1x, img/card3@2x.webp 2x"
+                />
+                <img
+                  src="img/card3@1x.png"
+                  srcset="img/card3@1x.png 1x, img/card3@2x.png 2x"
+                  alt="Круиз Атлантис"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card1-tablet@1x.png"
-                srcset="img/card3-tablet@1x.png 1x, img/card3-tablet@2x.png 2x"
-                alt="Круиз Атлантис"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card3-tablet@1x.webp 1x,
+                    img/card3-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card3-tablet@1x.png"
+                  srcset="
+                    img/card3-tablet@1x.png 1x,
+                    img/card3-tablet@2x.png 2x
+                  "
+                  alt="Круиз Атлантис"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card1-mobile@1x.png"
-                srcset="img/card3-mobile@1x.png 1x, img/card3-mobile@2x.png 2x"
-                alt="Круиз Атлантис"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card3-mobile@1x.webp 1x,
+                    img/card3-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card3-mobile@1x.png"
+                  srcset="
+                    img/card3-mobile@1x.png 1x,
+                    img/card3-mobile@2x.png 2x
+                  "
+                  alt="Круиз Атлантис"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Атлантис"</h3>
             <div class="tours__text">
@@ -334,33 +477,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card4@1x.png"
-                srcset="img/card4@1x.png 1x, img/card4@2x.png 2x"
-                alt="Круиз Одиссей"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card5@1x.webp 1x, img/card5@2x.webp 2x"
+                />
+                <img
+                  src="img/card5@1x.png"
+                  srcset="img/card5@1x.png 1x, img/card5@2x.png 2x"
+                  alt="Круиз Одиссей"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card4-tablet@1x.png"
-                srcset="img/card4-tablet@1x.png 1x, img/card4-tablet@2x.png 2x"
-                alt="Круиз Одиссей"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card5-tablet@1x.webp 1x,
+                    img/card5-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card5-tablet@1x.png"
+                  srcset="
+                    img/card5-tablet@1x.png 1x,
+                    img/card5-tablet@2x.png 2x
+                  "
+                  alt="Круиз Одиссей"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card4-mobile@1x.png"
-                srcset="img/card4-mobile@1x.png 1x, img/card4-mobile@2x.png 2x"
-                alt="Круиз Одиссей"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card5-mobile@1x.webp 1x,
+                    img/card5-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card5-mobile@1x.png"
+                  srcset="
+                    img/card5-mobile@1x.png 1x,
+                    img/card5-mobile@2x.png 2x
+                  "
+                  alt="Круиз Одиссей"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Одиссей"</h3>
             <div class="tours__text">
@@ -380,33 +553,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card5@1x.png"
-                srcset="img/card4@1x.png 1x, img/card4@2x.png 2x"
-                alt="Круиз Олимпия"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card6@1x.webp 1x, img/card6@2x.webp 2x"
+                />
+                <img
+                  src="img/card6@1x.png"
+                  srcset="img/card6@1x.png 1x, img/card6@2x.png 2x"
+                  alt="Круиз Олимпия"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card5-tablet@1x.png"
-                srcset="img/card5-tablet@1x.png 1x, img/card5-tablet@2x.png 2x"
-                alt="Круиз Олимпия"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card6-tablet@1x.webp 1x,
+                    img/card6-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card6-tablet@1x.png"
+                  srcset="
+                    img/card6-tablet@1x.png 1x,
+                    img/card6-tablet@2x.png 2x
+                  "
+                  alt="Круиз Олимпия"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card5-mobile@1x.png"
-                srcset="img/card5-mobile@1x.png 1x, img/card5-mobile@2x.png 2x"
-                alt="Круиз Олимпия"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card6-mobile@1x.webp 1x,
+                    img/card6-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card6-mobile@1x.png"
+                  srcset="
+                    img/card6-mobile@1x.png 1x,
+                    img/card6-mobile@2x.png 2x
+                  "
+                  alt="Круиз Олимпия"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Олимпия"</h3>
             <div class="tours__text">
@@ -428,33 +631,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card6@1x.png"
-                srcset="img/card6@1x.png 1x, img/card6@2x.png 2x"
-                alt="Круиз Аврора"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card7@1x.webp 1x, img/card7@2x.webp 2x"
+                />
+                <img
+                  src="img/card7@1x.png"
+                  srcset="img/card7@1x.png 1x, img/card7@2x.png 2x"
+                  alt="Круиз Аврора"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card6-tablet@1x.png"
-                srcset="img/card6-tablet@1x.png 1x, img/card6-tablet@2x.png 2x"
-                alt="Круиз Аврора"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card7-tablet@1x.webp 1x,
+                    img/card7-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card7-tablet@1x.png"
+                  srcset="
+                    img/card7-tablet@1x.png 1x,
+                    img/card7-tablet@2x.png 2x
+                  "
+                  alt="Круиз Аврора"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card6-mobile@1x.png"
-                srcset="img/card6-mobile@1x.png 1x, img/card6-mobile@2x.png 2x"
-                alt="Круиз Аврора"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card7-mobile@1x.webp 1x,
+                    img/card7-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card7-mobile@1x.png"
+                  srcset="
+                    img/card7-mobile@1x.png 1x,
+                    img/card7-mobile@2x.png 2x
+                  "
+                  alt="Круиз Аврора"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Аврора"</h3>
             <div class="tours__text">
@@ -476,33 +709,63 @@
           <li class="tours__item">
             <div class="tours__image tours__image--desktop">
               <!-- 1х: 260px; 2x: 520px -->
-              <img
-                src="img/card7@1x.png"
-                srcset="img/card7@1x.png 1x, img/card7@2x.png 2x"
-                alt="Круиз Леонор"
-                width="260"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/card8@1x.webp 1x, img/card8@2x.webp 2x"
+                />
+                <img
+                  src="img/card8@1x.png"
+                  srcset="img/card8@1x.png 1x, img/card8@2x.png 2x"
+                  alt="Круиз Леонор"
+                  width="260"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--tablet">
               <!-- 1х: 309px; 2x: 618px -->
-              <img
-                src="img/card7-tablet@1x.png"
-                srcset="img/card7-tablet@1x.png 1x, img/card7-tablet@2x.png 2x"
-                alt="Круиз Леонор"
-                width="309"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card8-tablet@1x.webp 1x,
+                    img/card8-tablet@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card8-tablet@1x.png"
+                  srcset="
+                    img/card8-tablet@1x.png 1x,
+                    img/card8-tablet@2x.png 2x
+                  "
+                  alt="Круиз Леонор"
+                  width="309"
+                  height="386"
+                />
+              </picture>
             </div>
             <div class="tours__image tours__image--mobile">
               <!-- 1х: 270px; 2x: 540px -->
-              <img
-                src="img/card7-mobile@1x.png"
-                srcset="img/card7-mobile@1x.png 1x, img/card7-mobile@2x.png 2x"
-                alt="Круиз Леонор"
-                width="270"
-                height="386"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/card8-mobile@1x.webp 1x,
+                    img/card8-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/card8-mobile@1x.png"
+                  srcset="
+                    img/card8-mobile@1x.png 1x,
+                    img/card8-mobile@2x.png 2x
+                  "
+                  alt="Круиз Леонор"
+                  width="270"
+                  height="386"
+                />
+              </picture>
             </div>
             <h3>Круиз "Леонор"</h3>
             <div class="tours__text">

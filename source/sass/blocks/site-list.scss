@@ -8,6 +8,7 @@
 .site-list__item {
   margin-right: 33px;
   max-width: 200px;
+  line-height: 30px;
 
   &:last-child {
     margin-right: 0;
@@ -58,13 +59,14 @@
 
   .site-list__item {
     margin-bottom: 30px;
+    line-height: 15px;
 
     &:last-child {
       margin-bottom: 0;
     }
 
     &--footer {
-      margin-bottom: 13px;
+      margin-bottom: 19px;
     }
   }
 

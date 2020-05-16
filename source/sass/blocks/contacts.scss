@@ -89,16 +89,26 @@
 @media (max-width: $mobile-width) {
   .contacts {
     padding-top: 48px;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
   }
 
   .contacts__wrapper {
     flex-direction: column-reverse;
   }
 
+  .contacts address {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+  }
+
+  .contacts__phone {
+    padding-left: 30px;
+  }
+
   .contacts__info {
     width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 33px;
   }
 
   .contacts__map {
